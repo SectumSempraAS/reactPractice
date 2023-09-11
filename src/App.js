@@ -3,6 +3,7 @@ import Car from './Car';
 import Football from './Football';
 import Myform from './PracticeForm';
 import Student from './Student';
+import Counter from './Counter.tsx';
 
 function oldtestFunctionWithoutArrowFunction() {
   return "Older way of writing functions";
@@ -84,6 +85,7 @@ function App() {
 
   return (
     <div className="App">
+      <Counter />
       <h1>Hello Anshuman, lets work!</h1>
       <p>{oldtestFunctionWithoutArrowFunction()}</p>
       <p>{arrowFunction()}</p>
@@ -109,7 +111,6 @@ function App() {
       {students.map((student, index) => {
         return <Student key={index} student={student}/>
       })}
-
       <Myform />
     </div>
   );
